@@ -18,7 +18,7 @@
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Agenda Name"
+        android:hint="Masukkan Nama Agenda"
         android:inputType="text" />
 
     <!-- Label for Agenda Description -->
@@ -35,8 +35,12 @@
         android:id="@+id/editTextDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Agenda Description"
-        android:inputType="text" />
+        android:hint="Masukkan Deskripsi"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:lines="4"
+        android:maxLines="6"
+        android:scrollbars="vertical" />
 
     <!-- Label for Status -->
     <TextView
@@ -55,11 +59,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp" />
 
+    <!-- Save Button -->
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="Simpan"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="16dp" />
 
 </LinearLayout>
